@@ -1,0 +1,14 @@
+substitutions:
+  device_name: belmai-sat-001
+  friendly_name: BELMAI Satellite 001
+
+packages:
+device: !include device.yaml
+wifi: !include wifi.yaml
+
+led_manager: !include hal/led_manager.yaml
+#secrets: !include secrets
+#api: !include api.yaml
+#ota: !include ota.yaml
+#diagnostics: !include diagnostics.yaml
+#led: !include led.yaml

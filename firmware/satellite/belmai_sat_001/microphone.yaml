@@ -1,0 +1,10 @@
+i2s_audio:
+
+microphone:
+  - platform: i2s_audio
+    id: belmai_microphone
+    i2s_din_pin: GPIOXX
+
+    adc_type: external
+
+    pdm: false

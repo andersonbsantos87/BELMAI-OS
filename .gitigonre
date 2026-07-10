@@ -1,0 +1,16 @@
+# ESPHome
+**/seccrets.yaml
+
+# Python
+_python_/
+*.pyc
+
+# VS Code
+.vscode
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
