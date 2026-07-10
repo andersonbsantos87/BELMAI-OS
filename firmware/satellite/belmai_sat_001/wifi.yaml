@@ -2,6 +2,8 @@ wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
 
+  fast_connect: true
+
   ap:
     ssid: "${friendly_name} Setup"
     password: "belmai123"

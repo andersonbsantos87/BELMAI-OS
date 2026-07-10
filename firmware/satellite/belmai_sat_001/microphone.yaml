@@ -1,10 +1,25 @@
+###########################################################
+# BELMAI OS
+# Microphone Manager
+# Hardware: INMP441
+###########################################################
+
 i2s_audio:
+  i2s_lrclk_pin: GPIO15
+  i2s_bclk_pin: GPIO16
 
 microphone:
   - platform: i2s_audio
     id: belmai_microphone
-    i2s_din_pin: GPIOXX
+
+    i2s_din_pin: GPIO17
 
     adc_type: external
 
     pdm: false
+
+    channel: left
+
+    sample_rate: 16000
+
+    bits_per_sample: 16bit

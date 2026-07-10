@@ -1,14 +1,34 @@
+#############################################################
+# BELMAI OS
+# Satellite: BELMAI SAT-001
+# Version: 0.2.0-alpha
+# Author: Belmiro & Comunidade BELMAI OS
+#############################################################
+
 substitutions:
   device_name: belmai-sat-001
   friendly_name: BELMAI Satellite 001
 
 packages:
-device: !include device.yaml
-wifi: !include wifi.yaml
 
-led_manager: !include hal/led_manager.yaml
+  # Identificação do dispositivo
+  device: !include device.yaml
+
+  # Conectividade
+  wifi: !include wifi.yaml
+
+  # Comunicação com Home Assistant
+  api: !include api.yaml
+
+  # Atualização OTA
+  ota: !include ota.yaml
+
+  # Diagnóstico
+  diagnostics: !include diagnostics.yaml
+
+  # Microfone
+  microphone: !include microphone.yaml
+
+
 #secrets: !include secrets
-#api: !include api.yaml
-#ota: !include ota.yaml
-#diagnostics: !include diagnostics.yaml
 #led: !include led.yaml
