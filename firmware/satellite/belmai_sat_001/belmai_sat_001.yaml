@@ -11,24 +11,26 @@ substitutions:
 
 packages:
 
-  # Identificação do dispositivo
   device: !include device.yaml
 
-  # Conectividade
-  wifi: !include wifi.yaml
+  wifi: !include ../../common/wifi.yaml
 
-  # Comunicação com Home Assistant
-  api: !include api.yaml
+  api: !include ../../common/api.yaml
 
-  # Atualização OTA
-  ota: !include ota.yaml
+  ota: !include ../../common/ota.yaml
 
-  # Diagnóstico
-  diagnostics: !include diagnostics.yaml
+  diagnostics: !include ../../common/diagnostics.yaml
 
-  # Microfone
-  microphone: !include microphone.yaml
+  microphone: !include ../../components/microphone.yaml
 
+  speaker: !include ../../components/speaker.yaml
+  
+  led_status: !include ../../components/led_status.yaml
+
+  voice_assistant: !include ../../components/voice_assistant.yaml
+
+
+  #media_player: !include ../../components/media_player.yaml
 
 #secrets: !include secrets
 #led: !include led.yaml

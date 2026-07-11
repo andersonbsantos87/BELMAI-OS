@@ -1,0 +1,19 @@
+esphome:
+  name: teste
+
+esp32:
+  board: esp32-s3-devkitc-1
+
+  framework:
+    type: esp-idf
+
+logger:
+
+wifi:
+  ssid: "SEU_WIFI"
+  password: "SUA_SENHA"
+
+api:
+
+ota:
+  - platform: esphome

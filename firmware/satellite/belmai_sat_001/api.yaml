@@ -1,4 +1,0 @@
-api:
-  encryption:
-    key:  !secret apt_key
-    

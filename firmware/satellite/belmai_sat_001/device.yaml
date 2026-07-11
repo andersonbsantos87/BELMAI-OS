@@ -1,7 +1,7 @@
 esphome:
   name: ${device_name}
   friendly_name: ${friendly_name}
-  comment: BELMAI OS Satelite
+  comment: BELMAI OS Satellite
   project:
     name: belmai.satelite
     version: "0.1.0-alpha"
